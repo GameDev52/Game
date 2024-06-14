@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Panel</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">ANASAYFA</a>
+    </div>
+    <div class="content">
+        <h2>Program Ekle</h2>
+        <form id="programForm">
+            <label for="title">Başlık:</label>
+            <input type="text" id="title" name="title" required><br><br>
+        
+            <label for="description">Açıklama:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+        
+            <label for="details">Detaylar:</label>
+            <textarea id="details" name="details" required></textarea><br><br>
+        
+            <label for="category">Kategori:</label>
+            <select id="category" name="category" required>
+                <option value="full-oyun-indir">FULL OYUN İNDİR</option>
+                <option value="full-bilgisayar-programlari-indir">FULL BİLGİSAYAR PROGRAMLARI İNDİR</option>
+                <option value="isletim-sistemleri">İŞLETİM SİSTEMLERİ</option>
+            </select><br><br>
+        
+            <label for="highlight">Öne Çıkar:</label>
+            <input type="checkbox" id="highlight" name="highlight"><br><br>
+        
+            <button type="submit">Program Ekle</button>
+        </form>
+
+        <h2>Mevcut Programlar</h2>
+        <div id="programList">
+            <!-- Program listesi burada yüklenecek -->
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

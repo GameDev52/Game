@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: #f4f4f4;
+}
+
+.header {
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    background-color: #444;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .program-list {
+    width: 70%;
+}
+
+.program-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.program-item {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    word-break: break-word;
+    margin-bottom: 20px; /* Aralık ekleyelim */
+}
+
+.program-item h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #ffa500; 
+}
+
+.program-item p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.program-item button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.program-item button:hover {
+    background-color: #ff6666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.2em;
+    color: #ffa500;
+}
+
+form input, form textarea, form select, form button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: white;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #ffa500;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffb733;
+}
+
+@media (max-width: 768px) {
+    .content .program-list {
+        width: 100%;
+    }
+
+    .program-item h2 {
+        font-size: 1.2em;
+    }
+
+    .program-item p {
+        font-size: 0.9em;
+    }
+}
